@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StratRoulette">
         <activity
+            android:name=".HavenAttackingMap"
+            android:exported="true" />
+        <activity
+            android:name=".HavenMap"
+            android:exported="true" />
+        <activity
+            android:name=".BindMap"
+            android:exported="true" />
+        <activity
+            android:name=".StrategyList"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
