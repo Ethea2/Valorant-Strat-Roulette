@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#364966"
-    tools:context=".HavenAttackingMap">
+    tools:context=".AscentDefendingMap">
 
     <ImageView
         android:id="@+id/valorantBackground"
@@ -76,7 +76,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="124dp"
         android:layout_marginEnd="100dp"
-        android:src="@drawable/haven_callout"
+        android:src="@drawable/ascent_callouts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
         android:alpha="1"
         android:fontFamily="@font/valorant_font"
         android:padding="10dp"
-        android:text="Haven"
+        android:text="Ascent"
         android:textColor="#fa4454"
         android:textSize="50dp"
         android:textStyle="bold"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:fontFamily="@font/valorant_font"
-        android:text="a\nt\nt\na\nc\nk\ni\nn\ng"
+        android:text="d\ne\nf\ne\nd\ni\nn\ng"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -122,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:fontFamily="@font/valorant_font"
-        android:text="a\nt\nt\na\nc\nk\ni\nn\ng"
+        android:text="d\ne\nf\ne\nd\ni\nn\ng"
         android:textAlignment="viewEnd"
         android:textColor="#FFFFFFFF"
         android:textSize="30dp"
@@ -132,5 +132,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.244" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

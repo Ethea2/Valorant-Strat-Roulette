@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#364966"
+    tools:context=".HavenChoice">
+
+    <ImageView
+        android:id="@+id/valorantBackground"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:alpha=".4"
+        android:src="@drawable/valorant_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/attackingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#fa4454"
+        android:fontFamily="@font/valorant_font"
+        android:padding="20dp"
+        android:text="Attacking Side"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/defendingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <Button
+        android:id="@+id/defendingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#fa4454"
+        android:fontFamily="@font/valorant_font"
+        android:padding="20dp"
+        android:text="Defending Side"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/valorantBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/havenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/valorant_font"
+        android:text="Haven"
+        android:textColor="@color/teal_200"
+        android:textSize="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/defendingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attackingButton"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/havenTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attackingButton"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/haven_screen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

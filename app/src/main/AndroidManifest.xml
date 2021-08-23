@@ -10,13 +10,58 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StratRoulette">
         <activity
+            android:name=".SplitChoice"
+            android:exported="true" />
+        <activity
+            android:name=".SplitDefendingMap"
+            android:exported="true" />
+        <activity
+            android:name=".SplitAttackingMap"
+            android:exported="true" />
+        <activity
+            android:name=".AscentChoice"
+            android:exported="true" />
+        <activity
+            android:name=".AscentDefendingMap"
+            android:exported="true" />
+        <activity
+            android:name=".AscentAttackingMap"
+            android:exported="true" />
+        <activity
+            android:name=".BreezeChoice"
+            android:exported="true" />
+        <activity
+            android:name=".BreezeDefendingMap"
+            android:exported="true" />
+        <activity
+            android:name=".BreezeAttackingMap"
+            android:exported="true" />
+        <activity
+            android:name=".IceboxChoice"
+            android:exported="true" />
+        <activity
+            android:name=".IceboxDefendingMap"
+            android:exported="true" />
+        <activity
+            android:name=".IceboxAttackingMap"
+            android:exported="true" />
+        <activity
+            android:name=".BindChoice"
+            android:exported="true" />
+        <activity
+            android:name=".BindDefendingMap"
+            android:exported="true" />
+        <activity
+            android:name=".HavenChoice"
+            android:exported="true" />
+        <activity
             android:name=".HavenAttackingMap"
             android:exported="true" />
         <activity
-            android:name=".HavenMap"
+            android:name=".HavenDefendingMap"
             android:exported="true" />
         <activity
-            android:name=".BindMap"
+            android:name=".BindAttackingMap"
             android:exported="true" />
         <activity
             android:name=".StrategyList"

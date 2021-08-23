@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#364966"
-    tools:context=".HavenAttackingMap">
+    tools:context=".HavenDefendingMap">
 
     <ImageView
         android:id="@+id/valorantBackground"
@@ -107,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:fontFamily="@font/valorant_font"
-        android:text="a\nt\nt\na\nc\nk\ni\nn\ng"
+        android:text="d\ne\nf\ne\nd\ni\nn\ng"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,14 +115,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/valorantBackground"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintVertical_bias="0.306" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:fontFamily="@font/valorant_font"
-        android:text="a\nt\nt\na\nc\nk\ni\nn\ng"
+        android:text="d\ne\nf\ne\nd\ni\nn\ng"
         android:textAlignment="viewEnd"
         android:textColor="#FFFFFFFF"
         android:textSize="30dp"
@@ -131,6 +131,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.303" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

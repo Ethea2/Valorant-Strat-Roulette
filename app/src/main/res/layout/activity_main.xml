@@ -11,40 +11,124 @@
         android:id="@+id/valorantBackground"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:alpha=".4"
         android:src="@drawable/valorant_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:alpha=".4"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/havenTitle"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:labelFor="@id/havenMapButton"
-        android:text="Haven"
-        android:textStyle="bold"
         android:fontFamily="@font/valorant_font"
-        android:textColor="#fa4454"
+        android:padding="10dp"
+        android:text="CHOOSE YOUR MAP"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/havenMapButton"
-        app:layout_constraintVertical_bias="0.092"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/havenMapButton"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="224dp"
-        android:background="@drawable/haven_screen"
-        android:maxWidth="100dp"
-        android:maxHeight="100dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/iceboxMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Icebox"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/havenMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Haven"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/breezeMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Breeze"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/bindMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Bind"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/splitMapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Split"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/ascentButtonMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fa4454"
+                android:fontFamily="@font/valorant_font"
+                android:padding="10dp"
+                android:text="Ascent"
+                android:textColor="#FFFFFF"
+                android:textSize="43dp"
+                android:textStyle="bold"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,14 +7,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import java.util.*
 
-class HavenAttackingMap : AppCompatActivity() {
+class HavenDefendingMap : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_haven_attacking_map)
-
+        setContentView(R.layout.activity_haven_defending_map)
         val stratTitle: TextView = findViewById(R.id.stratTitle)
         val stratDesc: TextView = findViewById(R.id.stratDesc)
         val stratPicker: Button = findViewById(R.id.stratPicker)
+        val valorantBackground: ImageView = findViewById(R.id.valorantBackground)
         val mapName: TextView = findViewById(R.id.mapName)
 
         mapName.setText("Haven")
@@ -25,10 +25,11 @@ class HavenAttackingMap : AppCompatActivity() {
 
     fun stratDisplayRoll(title: TextView, description: TextView){
         val stratObject = Strategies()
-        val anyMapStrats = stratObject.anyMapStrats() + stratObject.anyMapAttackingStrats()
+        val anyMapStrats = stratObject.anyMapStrats() + stratObject.anyMapDefendingStrats()
         val randomStrat = anyMapStrats.entries.elementAt(Random().nextInt(anyMapStrats.size))
 
         title.setText(randomStrat.key)
         description.setText(anyMapStrats[randomStrat.key])
     }
+
 }
