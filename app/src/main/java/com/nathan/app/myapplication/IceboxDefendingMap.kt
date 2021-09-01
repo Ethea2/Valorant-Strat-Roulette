@@ -7,6 +7,11 @@ import android.widget.TextView
 import java.util.*
 
 class IceboxDefendingMap : AppCompatActivity() {
+    private val iceboxDefendingStrats = mutableMapOf(
+        "Pipe Rush" to """Everyone must rush to get onto pipes and kill all the enemies without leaving the pipes!""",
+
+        "Rope Squad" to """Everyone must get onto a rope of their choice! You cannot leave the rope you choose."""
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_icebox_defending_map)
@@ -22,7 +27,7 @@ class IceboxDefendingMap : AppCompatActivity() {
 
     fun stratDisplayRoll(title: TextView, description: TextView){
         val stratObject = Strategies()
-        val anyMapStrats = stratObject.anyMapStrats() + stratObject.anyMapDefendingStrats()
+        val anyMapStrats = stratObject.anyMapStrats() + stratObject.anyMapDefendingStrats() + iceboxDefendingStrats
         val randomStrat = anyMapStrats.entries.elementAt(Random().nextInt(anyMapStrats.size))
 
         title.setText(randomStrat.key)

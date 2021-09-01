@@ -59,7 +59,10 @@ class Strategies {
 
             "The Best Defense is Offense" to """Hit the enemy with derogatory, discriminatory,
                 |and racial slurs. Just kidding. Everyone must push every angle in the map without
-                |hesitation. RUSH!! """.trimMargin()
+                |hesitation. RUSH!! """.trimMargin(),
+
+            "Utility Hold" to """If one of the teammates hear steps on his site, everyone must run 
+                |towards that teammates' site and use all their utils to wherever the step was heard.""".trimMargin()
         )
         return anyMapDefStrat
     }
@@ -86,7 +89,13 @@ class Strategies {
 
             "Tactical Leader" to """Everyone must elect a leader to follow. Everything that the 
                 |leader says must be followed without hesitation. 
-                |The tactical leader can only stay in the base""".trimMargin()
+                |The tactical leader can only stay in the base""".trimMargin(),
+
+            "The Triangle Strat" to """Everyone must attack any site in this team formation:
+                # *
+                # *   *
+                # *      *
+            """.trimMargin("#")
         )
 
         return anyMapAttackStrat
